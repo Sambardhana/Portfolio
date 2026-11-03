@@ -846,7 +846,7 @@ footer p + p {
 /* Individual Skill Tag Style */
 .skill-card .tags span {
     background: #f1f5f9;
-    color: #334155;
+    color:rgb(107, 120, 137);
     padding: 0.35rem 0.75rem;
     border-radius: 6px;
     font-size: 0.875rem;
@@ -865,3 +865,4 @@ footer p + p {
 .project-link span {
     font-size: 0.8em;
 }
+
