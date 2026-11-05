@@ -1,673 +1,201 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of a Computer Science student focused on AI research and software development.">
-    <title>Sambardhana Bishoyi | Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sambardhana Bishoyi — AI Researcher and Software Developer Portfolio">
+<title>Sambardhana Bishoyi | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="chrome" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".5" stop-color="#9fb0d8"/><stop offset="1" stop-color="#e8eeff"/></linearGradient>
+<linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c58bff"/><stop offset="1" stop-color="#6a2cff"/></linearGradient>
+<radialGradient id="red" cx=".35" cy=".3"><stop offset="0" stop-color="#ff7a7a"/><stop offset="1" stop-color="#d4111f"/></radialGradient>
+<linearGradient id="lime" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d8ff3a"/><stop offset="1" stop-color="#2ee08a"/></linearGradient>
+<g id="s-ast" fill="url(#chrome)"><rect x="-8" y="-46" width="16" height="92" rx="8"/><rect x="-8" y="-46" width="16" height="92" rx="8" transform="rotate(60)"/><rect x="-8" y="-46" width="16" height="92" rx="8" transform="rotate(120)"/></g>
+<g id="s-flower"><g fill="url(#violet)"><circle cx="0" cy="-24" r="18"/><circle cx="23" cy="-7" r="18"/><circle cx="14" cy="19" r="18"/><circle cx="-14" cy="19" r="18"/><circle cx="-23" cy="-7" r="18"/></g><circle r="9" fill="#ffc83a"/></g>
+<path id="s-heart" fill="url(#red)" d="M0 40C-60 0-40-40-18-40-6-40 0-30 0-26 0-30 6-40 18-40 40-40 60 0 0 40Z"/>
+<path id="s-bolt" fill="url(#lime)" d="M12-46-26 4H-4L-14 46 28-8H4Z"/>
+<g id="s-cube"><polygon points="0,-44 38,-22 0,0 -38,-22" fill="#8ab6ff"/><polygon points="-38,-22 0,0 0,44 -38,22" fill="#3b5bff"/><polygon points="38,-22 0,0 0,44 38,22" fill="#5b3dff"/></g>
+</defs></svg>
 
-    <!-- NAVBAR -->
-    <header>
-        <nav class="navbar container">
-            <!-- <a href="#home" class="logo">SB<span></span></a> -->
+<div class="cursor-glow"></div>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
-                ☰
-            </button>
+<header class="navbar">
+  
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+  <nav id="navLinks">
+    <a href="#about">ABOUT</a>
+    <a href="#education">EDUCATION</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#research">RESEARCH</a>
+    <a href="#contact">CONTACT</a>
+    <a href="assests/resume.pdf">MY CV</a>
+  </nav>
+</header>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-topline"><span></span><span>AI RESEARCHER · SOFTWARE DEVELOPER</span></div>
+  <h1 class="hero-title">SAMBARDHANA <span>BISHOYI</span></h1>
+ <div class="avatar">
+    <img src="assests/photo.png" alt="Sambardhana Bishoyi">
+</div>
+  <div class="hero-row">
+    <p class="hero-description">A computer science student passionate about Artificial Intelligence, research and building meaningful digital experiences.</p>
+    <a href="assests/resume.pdf" class="pill" target="_blank">VIEW RESUME</a>
+  </div>
+  <div class="hero-bottom"><span>SCROLL TO EXPLORE ↓</span><span>THIRD YEAR B.TECH · COMPUTER SCIENCE</span></div>
+</section>
 
-    <main>
+<div class="marquee"><div class="marquee-track">
+  <span>ARTIFICIAL INTELLIGENCE ✳</span><span>DEEP LEARNING ✳</span><span>SOFTWARE DEVELOPMENT ✳</span><span>RESEARCH ✳</span>
+  <span>ARTIFICIAL INTELLIGENCE ✳</span><span>DEEP LEARNING ✳</span><span>SOFTWARE DEVELOPMENT ✳</span><span>RESEARCH ✳</span>
+</div></div>
+<br>
 
-        <!-- HERO SECTION -->
-        <section class="hero" id="home">
-            <div class="container hero-content">
-
-                <div class="hero-text">
-                    <p class="eyebrow">HELLO, I'M</p>
-
-                    <h1>Sambardhana <span>Bishoyi</span></h1>
-
-                    <h2>B.Tech Student | AI Research & Software Developer</h2>
-
-                    <p class="hero-description">
-                        I am a third-year B.Tech student passionate about
-                        Artificial Intelligence, Deep Learning, Research
-                        and Software Development. I enjoy exploring
-                        technologies and building meaningful solutions
-                        through innovation and collaboration.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn primary-btn">
-                            Explore My Work
-                        </a>
-
-                        <a href="assests\resume.pdf" class="btn outline-btn"
-                           target="_blank">
-                            View Resume
-                        </a>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="https://github.com/Sambardhana?tab=repositories" target="_blank">
-                            GitHub ↗
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/sambardhana-bishoyi-88167b336/"
-                           target="_blank">
-                            LinkedIn ↗
-                        </a>
-
-                       
-                    </div>
-                </div>
-
-                <div class="hero-image">
-                    <div class="profile-circle">
-                        <img src="assests\photo.jpeg"
-                             alt="Sambardhana Bishoyi"
-                             onerror="this.style.display='none'; this.parentElement.classList.add('no-photo');">
-                        <span class="profile-initials">SB</span>
-                    </div>
-                    <!-- <div class="floating-card">
-                        <span>9.3 CGPA</span>
-                        <small>Academic Performance</small>
-                    </div> -->
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- ABOUT SECTION -->
-        <section class="section" id="about">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">GET TO KNOW ME</p>
-                    <h2>About Me</h2>
-                </div>
-
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            I am currently pursuing my third year of
-                            B.Tech in Computer Science at
-                            <strong>Centurion University technology and Management</strong>.
-                        </p>
-
-                        <p>
-                            My interests lie in Artificial Intelligence,
-                            Deep Learning, software engineering and
-                            solving real-world problems through technology.
-                        </p>
-
-                        <p>
-                            Alongside software development projects,
-                            I am collaborating with my mentor on research
-                            involving deep-learning-based brain tumor
-                            segmentation from MRI scans.
-                        </p>
-
-                        <p>
-                            I have also participated in hackathons,
-                            where I gained experience in teamwork,
-                            creative thinking and collaborative
-                            problem-solving.
-                        </p>
-                    </div>
-
-                    <div class="about-stats">
-                        <div class="stat-card">
-                            <h3>9.3</h3>
-                            <p>CGPA</p>
-                        </div>
-
-                        <div class="stat-card">
-                            <h3>6+</h3>
-                            <p>Academic Projects</p>
-                        </div>
-
-                        <div class="stat-card">
-                            <h3>AI</h3>
-                            <p>Research Interest</p>
-                        </div>
-
-                        <div class="stat-card">
-                            <h3>2028</h3>
-                            <p>Graduation </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-<!-- EDUCATION -->
-<section class="section light-section" id="education">
-    <div class="container">
-
-        <div class="section-heading">
-            <p class="eyebrow"></p>
-            <h2>Education 🎓</h2>
-            <div class="education-icon"></div>
-        </div>
-
-        <!-- Container wrapper for cards -->
-        <div class="education-grid">
-
-            <div class="edu-box">
-                <h3>Kendriya Vidyalaya Puri</h3>
-                <p>Secondary</p>
-                <p class="education-year">2011 – 2021</p>
-                <span class="cgpa">92%</span>
-            </div>
-
-            <div class="edu-box">
-                <h3>Kendriya Vidyalaya Puri</h3>
-                <p>Senior Secondary</p>
-                <p class="education-year">2021 – 2023</p>
-                <span class="cgpa">80%</span>
-            </div>
-
-            <div class="edu-box">
-                <h3>Bachelor of Technology (B.Tech)</h3>
-                <p>Computer Science (ST domain)</p>
-                <p>Centurion University</p>
-                <p class="education-year">2024 – 2028</p>
-                <span class="cgpa">9.3 CGPA</span>
-            </div>
-
-        </div>
-
+<section class="section dark about-section" id="about">
+  <svg class="shape" data-speed="-.12" style="left:5%;top:14%;width:110px" viewBox="-50 -50 100 100"><use href="#s-ast"/></svg>
+  <svg class="shape" data-speed="-.2" style="right:6%;top:10%;width:100px" viewBox="-50 -50 100 100"><use href="#s-cube"/></svg>
+  <svg class="shape" data-speed="-.08" style="right:10%;top:52%;width:110px" viewBox="-50 -50 100 100"><use href="#s-flower"/></svg>
+  <svg class="shape" data-speed="-.16" style="left:8%;top:62%;width:90px" viewBox="-50 -50 100 100"><use href="#s-heart"/></svg>
+  <div class="section-index"> ABOUT ME</div>
+  <h2 class="huge-heading fx-fill">ABOUT ME</h2>
+  <div class="about-copy">
+    <p>I am currently pursuing my third year of B.Tech in Computer Science at <strong>Centurion University of Technology and Management</strong>.</p>
+    <p>My interests lie in Artificial Intelligence, Deep Learning, software engineering and solving real-world problems through technology.</p>
+    <p>I am also collaborating with my mentor on research involving deep-learning-based brain tumor segmentation from MRI scans.</p>
+    <p>I enjoy working with teams, participating in hackathons and turning ideas into practical technology solutions.</p>
+    <div class="about-stats">
+      <div><strong>9.3</strong><span>CGPA</span></div>
+      <div><strong>6+</strong><span>PROJECTS</span></div>
+      <div><strong>AI</strong><span>RESEARCH INTEREST</span></div>
     </div>
+    <a href="#contact" class="pill">CONTACT ME</a>
+  </div>
+</section>
+
+<section class="section dark education-section" id="education">
+  <div class="section-index"> EDUCATION</div>
+  <h2 class="section-title fx-fill">THE JOURNEY SO FAR.</h2>
+  <div class="timeline">
+    <article class="timeline-card rv"><span class="timeline-year">2011 — 2021</span><div><h3>Kendriya Vidyalaya Puri</h3><p>Secondary Education</p></div><strong>92%</strong></article>
+    <article class="timeline-card rv"><span class="timeline-year">2021 — 2023</span><div><h3>Kendriya Vidyalaya Puri</h3><p>Senior Secondary Education</p></div><strong>80%</strong></article>
+    <article class="timeline-card rv"><span class="timeline-year">2024 — 2028</span><div><h3>Bachelor of Technology</h3><p>Computer Science · Centurion University</p></div><strong>9.3 CGPA</strong></article>
+  </div>
+</section>
+
+<section class="section light skills-section" id="skills">
+  <div class="section-index"> WHAT I WORK WITH</div>
+  <h2 class="section-title fx-fill">TOOLS OF MY TRADE.</h2>
+  <div class="skills-grid">
+    <article class="skill-card rv"><span>01</span><h3>Programming</h3><p>Python · Java · Kotlin</p></article>
+    <article class="skill-card rv"><span>02</span><h3>AI &amp; Deep Learning</h3><p>CNN · TensorFlow · Keras</p></article>
+    <article class="skill-card rv"><span>03</span><h3>Data &amp; Experimentation</h3><p>NumPy · Pandas · Jupyter · Colab</p></article>
+    <article class="skill-card rv"><span>04</span><h3>Web &amp; Backend</h3><p>Angular · HTML · CSS · JavaScript · Spring Boot · PHP</p></article>
+    <article class="skill-card rv"><span>05</span><h3>Mobile Development</h3><p>Android Studio · Jetpack Compose</p></article>
+    <article class="skill-card rv"><span>06</span><h3>Database &amp; Tools</h3><p>PostgreSQL · SQL · Git</p></article>
+  </div>
+</section>
+
+<section class="section dark projects-section" id="projects">
+  <div class="section-index">SELECTED WORK</div>
+  <h2 class="section-title fx-fill">IDEAS INTO REALITY.</h2>
+  <p class="section-intro">A collection of projects built through experimentation, collaboration and continuous learning.</p>
+  <div class="projects-grid">
+    <article class="project-card" style="--i:0">
+      <div class="pc-head"><span class="pc-num">01</span><div><h3>Brainiac</h3><small>ANDROID</small></div><a class="pill sm" href="https://github.com/Sambardhana/Brainiac" target="_blank" rel="noopener noreferrer">EXPLORE PROJECT ↗</a></div>
+      <div class="pc-body"><div class="project-art art-brainiac">B.</div><p class="pc-tile">A gamified learning platform for rural education, designed to make learning engaging, accessible and interactive.</p><div class="pc-tile project-tags">KOTLIN · ANDROID · JETPACK COMPOSE</div></div>
+    </article>
+    <article class="project-card" style="--i:1">
+      <div class="pc-head"><span class="pc-num">02</span><div><h3>UniGuide</h3><small>ANDROID</small></div><a class="pill sm" href="uniguide.html">EXPLORE PROJECT ↗</a></div>
+      <div class="pc-body"><div class="project-art art-uniguide">UNI<span>GUIDE</span></div><p class="pc-tile">An Android application helping new students access university information, academics, hostel details, campus facilities and events.</p><div class="pc-tile project-tags">KOTLIN · ANDROID STUDIO · COMPOSE</div></div>
+    </article>
+    <article class="project-card" style="--i:2">
+      <div class="pc-head"><span class="pc-num">03</span><div><h3>MediSarthi</h3><small>HEALTHCARE</small></div><a class="pill sm" href="https://medisarthi-ai-web.netlify.app/" target="_blank" rel="noopener noreferrer">EXPLORE PROJECT ↗</a></div>
+      <div class="pc-body"><div class="project-art art-medi">M+</div><p class="pc-tile">An AI-powered healthcare access platform that structures patient medical history and provides an affordable pathway to verified medical experts.</p><div class="pc-tile project-tags">JAVASCRIPT · PYTHON · CSS</div></div>
+    </article>
+    <article class="project-card" style="--i:3">
+      <div class="pc-head"><span class="pc-num">04</span><div><h3>Artifex</h3><small>ARTISAN PLATFORM</small></div><a class="pill sm" href="https://artefix-five.vercel.app" target="_blank" rel="noopener noreferrer">EXPLORE PROJECT ↗</a></div>
+      <div class="pc-body"><div class="project-art art-artifex">A.</div><p class="pc-tile">A platform empowering local artisans with smart tools for beautiful listings, fair pricing and customer engagement.</p><div class="pc-tile project-tags">JAVASCRIPT · PYTHON · CSS</div></div>
+    </article>
+    <article class="project-card" style="--i:4">
+      <div class="pc-head"><span class="pc-num">05</span><div><h3>Property360 (under progress)</h3><small>WEB PLATFORM</small></div><span class="pill sm project-progress">UNDER DEVELOPMENT</span></div>
+      <div class="pc-body"><div class="project-art art-property">360°</div><p class="pc-tile">A property platform for exploring listings and supporting property management features. My role involves frontend development.</p><div class="pc-tile project-tags">ANGULAR · SPRING BOOT</div></div>
+    </article>
+    <article class="project-card" style="--i:5">
+      <div class="pc-head"><span class="pc-num">06</span><div><h3>NagarSetu(under progress)</h3><small>CITIZEN SERVICES</small></div><span class="pill sm project-progress">PROJECT WORK</span></div>
+      <div class="pc-body"><div class="project-art art-nagar">N.</div><p class="pc-tile">A digital citizen-service project focused on providing services and supporting civic issue reporting.</p><div class="pc-tile project-tags">JAVA · SPRING BOOT</div></div>
+    </article>
+  </div>
+</section>
+
+<section class="section dark research-section" id="research">
+  <div class="section-index">05 / RESEARCH</div>
+  <h2 class="section-title fx-fill">CURIOUS ABOUT THE UNKNOWN.</h2>
+  <article class="research-feature rv">
+    <div class="research-feature-top"><span>AI · MEDICAL IMAGE ANALYSIS</span><span class="pill sm status">IN PREPARATION</span></div>
+    <h3>Deep Learning-Based Brain Tumor Segmentation Using MRI</h3>
+    <p>Working on automated brain tumor segmentation from MRI scans using deep-learning-based semantic segmentation approaches and the BraTS2020 dataset.</p>
+    <div class="research-details">
+      <div><h4>ARCHITECTURES</h4><p>U-Net · Attention U-Net · ResUNet · EfficientUNet</p></div>
+      <div><h4>LOSS FUNCTIONS</h4><p>BCE + Dice · Weighted BCE · Focal Loss · Dice Loss</p></div>
+      <div><h4>EVALUATION</h4><p>Dice · IoU · Precision · Recall · HD95</p></div>
+      <div><h4>TECHNOLOGIES</h4><p>Python · TensorFlow/Keras · NumPy · Pandas · Colab</p></div>
+    </div>
+    <p class="research-note">Journal manuscript — In Preparation.</p>
+  </article>
 </section>
 
 
+<div class="gallery" aria-hidden="true"><div class="g-row" id="row1"></div><div class="g-row" id="row2"></div></div>
 
-        <!-- PROJECTS -->
-        <section class="section light-section" id="projects">
-            <div class="container">
+<section class="section dark activities-section" id="activities">
+  <div class="emoji" id="emoji" data-speed="-.1">😍</div>
+  <div class="section-index">BEYOND THE CLASSROOM</div>
+  <h2 class="section-title fx-fill">LEARNING BY DOING.</h2>
+  <div class="activity-list">
+    <article class="rv"><span>01</span><div><h3>Top 5 — SIH Internal 2025</h3><p>Developed Brainiac, a gamified learning platform for rural education.</p></div></article>
+    <article class="rv"><span>02</span><div><h3>Hackathon Participation</h3><p>Collaborative development, creative thinking and problem-solving under time constraints.</p></div></article>
+    <article class="rv"><span>03</span><div><h3>AI Internship — Plasmid Innovation</h3><p>Technical deliverables and analysis covering K-Means Clustering and Spam Detection models.</p></div></article>
+    <article class="rv"><span>04</span><div><h3>Anthropic Academy</h3><p>Completed 20 official learning certifications.</p></div></article>
+  </div>
+</section>
 
-                <div class="section-heading">
-                    <p class="eyebrow">MY WORK</p>
-                    <h2>Academic Projects</h2>
-                    <p class="section-subtitle">
-                        Projects developed through learning, experimentation
-                        and collaboration.
-                    </p>
-                </div>
+<section class="section light contact-section" id="contact">
+  <svg class="shape" data-speed="-.18" style="right:7%;top:8%;width:120px" viewBox="-50 -50 100 100"><use href="#s-bolt"/></svg>
+  <svg class="shape" data-speed="-.1" style="left:4%;bottom:12%;width:110px" viewBox="-50 -50 100 100"><use href="#s-flower"/></svg>
+  <div class="section-index">GET IN TOUCH</div>
+  <p class="contact-overline"></p>
+  <h2 class="fx-fill">LET'S MAKE<br>IT HAPPEN.</h2>
+  <a class="contact-main" href="mailto:sambardhanabishoyi@gmail.com">sambardhanabishoyi@gmail.com</a>
+  <a class="pill dk" href="mailto:sambardhanabishoyi@gmail.com">GET IN TOUCH ↗</a>
+</section>
+</main>
 
-                <div class="projects-grid">
-
-                  <article class="project-card">
-                        <div class="project-number">01</div>
-                        <h3>Brainiac</h3>
-                        <p class="project-type">Android Application</p>
-                        <p>
-                            a gamified learning platform for rural education with the mission to make learning more engaging, accessible, and interactive for students in underserved regions.
-                        </p>
-                        <div class="tags">
-                            <span>Kotlin</span>
-                            <span>Android Studio</span>
-                            <span>Jetpack Compose</span>
-                        </div>
-                        <br>
-                           <a href="https://brainiac-gamma.vercel.app/"
-                           target="_blank"
-                            rel="noopener noreferrer"
-                            class="project-link">
-                           Explore Project →
-        </a>
-                    </article>
-
-                   <article class="project-card">
-    <a href="uniguide.html" class="project-card-link">
-
-        <div class="project-number">02</div>
-
-        <h3>UniGuide </h3>
-
-        <p class="project-type">Android Application</p>
-
-        <p>
-            An Android application designed to help new
-            students access university information,
-            academics, hostel details, campus facilities,
-            events and emergency contacts.
-        </p>
-
-        <div class="tags">
-            <span>Kotlin</span>
-            <span>Android Studio</span>
-            <span>Jetpack Compose</span>
-        </div>
-
-        <br>
-        <p class="project-link-text">Explore Project →</p>
-
-    </a>
-</article>
-
-                    <article class="project-card">
-                        <div class="project-number">03</div>
-                        <h3>Property360</h3>
-                        <p class="project-type">Property Management Platform</p>
-                        <p>
-                            A platform for exploring property listings
-                            and supporting property management features.
-                            My role involves frontend development.
-                        </p>
-                        <div class="tags">
-                            <span>Angular</span>
-                            <span>Spring Boot</span>
-                        </div>
-                        <br>
-                            <p class="project-link-text">Explore Project (under progress)→</p>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-number">04</div>
-                        <h3>NagarSetu</h3>
-                        <p class="project-type">Citizen Service Platform</p>
-                        <p>
-                            A digital citizen-service project focused on
-                            providing services and supporting civic
-                            issue reporting.
-                        </p>
-                        <div class="tags">
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                        </div>
-                        <br>
-                          <p class="project-link-text">Explore Project (under progress)→</p>
-                    </article>
-
-                   <article class="project-card">
-    <div class="project-number">05</div>
-
-    <h3> MediSarthi</h3>
-
-    <p class="project-type">Healthcare Project</p>
-
-    <p>
-        AI-powered healthcare access platform that prepares patients
-        for consultation by collecting and structuring their medical
-        history, while providing an affordable pathway to verified
-        medical experts.
-    </p>
-
-    <div class="tags">
-                            <span>JavaScript</span>
-                            <span>Python</span>
-                            <span>CSS</span>
+<footer class="site-footer">
+  <div class="foot-top">
+    <h2 class="foot-name">SAMBARDHANA<br>BISHOYI</h2>
+    <div class="contact-bottom">
+      <div><h4>SOCIAL</h4><a href="https://github.com/Sambardhana" target="_blank">GitHub</a><a href="https://www.linkedin.com/in/sambardhana-bishoyi-88167b336/" target="_blank">LinkedIn</a></div>
+      <div><h4>CONTACT</h4><a href="mailto:sambardhanabishoyi@gmail.com">Email</a><span>India</span></div>
     </div>
-
-    <br>
-    <a href="https://medisarthi-ai-web.netlify.app/"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="project-link">
-             Explore Project →
-        </a>
-</article>
-
-                    <article class="project-card">
-                        <div class="project-number">06</div>
-                        <h3>Artifex</h3>
-                        <p class="project-type">Local Artisans Project</p>
-                        <p>
-                            Artifex empowers local artisans with smart tools for beautiful listings, fair pricing, and delighted customers.
-                        </p>
-                        <div class="tags">
-                            <span>JavaScript</span>
-                            <span>Python</span>
-                            <span>CSS</span>
-                        </div>
-                        <br>
-                            <a href="https://artefix-five.vercel.app"
-                             target="_blank"
-                             rel="noopener noreferrer"
-                             class="project-link">
-                             Explore Project →
-        </a>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- HACKATHONS -->
-        <section class="section" id="activities">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">BEYOND CLASSROOMS</p>
-                    <h2>Activities & Participation</h2>
-                </div>
-
-                <div class="activity-card">
-                  <h3>Top 5 at SIH (Internal) 2025</h3>
-                  <p>
-                    We built Brainiac, a gamified learning platform for rural education with the mission to make learning more engaging, accessible, and interactive for students in underserved regions.
-                  </p>
-                </div>
-                <div class="activity-card">
-                    <h3>Hackathon Participation</h3>
-                    <p>
-                        Participated in hackathons, gaining experience
-                        in teamwork, creative thinking, collaborative
-                        development and solving problems under time
-                        constraints.
-                    </p>
-                    <p class="placeholder">
-                        [Google Cloud Gen AI Exchange Hackathon]
-                    </p>
-                </div>
-                <div class="activity-card">
-                  <h3>AI Internship at Plasmid Innovation</h3>
-                  <p>
-                    Completed technical deliverables and analysis covering K-Means Clustering and Spam Detection models.
-                  </p>
-                </div>
-
-                <div class="activity-card">
-                  <h3>Anthropic Certifications</h3>
-                  <p>
-                      wrapped up an intensive learning sprint: 20 official certifications completed through the Anthropic Academy.
-                  </p>
-                </div>
-            </div>
-        </section>
-
-        
-        <!-- RESEARCH -->
-        <section class="section research-section" id="research">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">ONGOING RESEARCH</p>
-                    <h2>Research Experience 🧠</h2>
-                    
-                </div>
-
-                <div class="research-card">
-
-                  <div class="research-card">
-
-    <h3>
-        Deep Learning-Based Brain Tumor Segmentation Using MRI
-    </h3>
-
-    <p class="research-status">
-        Journal Manuscript — In Preparation
-    </p>
-
-    <p>
-        Working on a deep-learning-based approach for automated
-        brain tumor segmentation using MRI scans and the BraTS2020
-        dataset, with the aim of supporting accurate medical
-        image analysis.
-    </p>
-
-    <h4>Research Focus</h4>
-    <ul>
-        <li>
-            Implementation and comparison of U-Net, Attention U-Net,
-            ResUNet, and EfficientUNet architectures.
-        </li>
-        <li>
-            Experimentation with BCE + Dice Loss, Weighted BCE,
-            Focal Loss, and Dice Loss.
-        </li>
-        <li>
-            Patient-level dataset splitting to prevent data leakage.
-        </li>
-        <li>
-            Evaluation using Dice Coefficient, IoU, Precision,
-            Recall, and HD95.
-        </li>
-    </ul>
-
-    <h4>Tools & Technologies</h4>
-    <p>
-        Python · TensorFlow/Keras · NumPy · Pandas ·
-        BraTS2020 · Google Colab · Jupyter Notebook
-    </p>
-
-    <p class="publication-note">
-        Research manuscript currently in preparation.
-        Journal selection has not yet been confirmed.
-    </p>
-    <div>
-                            
-                         
-
-                    <p>
-                        Investigating automated identification and
-                        segmentation of brain tumor regions from MRI scans
-                        using deep-learning-based semantic segmentation
-                        approaches.
-                    </p>
-
-                    <div class="research-block">
-                        <h4>Research Objective</h4>
-                        <p>
-                            To study methods that can accurately segment
-                            tumor regions in brain MRI images, reducing
-                            dependence on entirely manual segmentation
-                            and supporting medical image analysis.
-                        </p>
-                    </div>
-
-                    <div class="research-block">
-                        <h4>Architectures Studied</h4>
-                        <div class="tags">
-                            <span>U-Net</span>
-                            <span>Attention U-Net</span>
-                            <span>ResUNet</span>
-                            <span>EfficientUNet</span>
-                        </div>
-                    </div>
-
-                    <div class="research-block">
-                        <h4>Loss Functions</h4>
-                        <div class="tags">
-                            <span>BCE + Dice Loss</span>
-                            <span>Weighted BCE</span>
-                            <span>Focal Loss</span>
-                            <span>Dice Loss</span>
-                        </div>
-                    </div>
-
-                    <div class="research-block">
-                        <h4>Dataset & Technologies</h4>
-                        <div class="tags">
-                            <span>BraTS2020</span>
-                            <span>Python</span>
-                            <span>TensorFlow / Keras</span>
-                            <span>NumPy</span>
-                            <span>Pandas</span>
-                            <span>Google Colab</span>
-                            <span>Jupyter Notebook</span>
-                        </div>
-                    </div>
-
-                    <div class="research-block">
-                        <h4>My Research Contribution</h4>
-                        <ul>
-                            <li>Dataset exploration and MRI preprocessing.</li>
-                            <li>Patient-level training, validation and testing splits.</li>
-                            <li>Implementation of segmentation architectures.</li>
-                            <li>Comparative model and loss-function experiments.</li>
-                            <li>Evaluation of segmentation performance.</li>
-                            <li>Modularization of research code for reproducibility and maintainability.</li>
-                        </ul>
-                    </div>
-
-                    <div class="research-block">
-                        <h4>Evaluation Metrics</h4>
-                        <div class="tags">
-                            <span>Dice Coefficient</span>
-                            <span>IoU</span>
-                            <span>Precision</span>
-                            <span>Recall</span>
-                            <span>HD95</span>
-                        </div>
-                    </div>
-
-                    
-
-                </div>
-              </div>
-                    
-                        
-            </div>
-        </section>
-        
-        <!-- SKILLS -->
-        <section class="section" id="skills">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">WHAT I WORK WITH</p>
-                    <h2>Technical Skills</h2>
-                </div>
-
-                <div class="skills-grid">
-
-                    <div class="skill-card">
-                        <h3>Programming</h3>
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>Java</span>
-                            <span>Kotlin</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>AI & Deep Learning</h3>
-                        <div class="tags">
-                            <span>CNN</span>
-                            <span>TensorFlow</span>
-                            <span>Keras</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Data & Experimentation</h3>
-                        <div class="tags">
-                            <span>NumPy</span>
-                            <span>Pandas</span>
-                            <span>Jupyter Notebook</span>
-                            <span>Google Colab</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Web & Backend</h3>
-                        <div class="tags">
-                            <span>Angular</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>Spring Boot</span>
-                            <span>PHP</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Mobile Development</h3>
-                        <div class="tags">
-                            <span>Android Studio</span>
-                            <span>Jetpack Compose</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Database & Tools</h3>
-                        <div class="tags">
-                            <span>PostgreSQL</span>
-                            <span>SQL</span>
-                            <span>Git</span>
-                            
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!-- CONTACT -->
-        <section class="section contact-section" id="contact">
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">GET IN TOUCH</p>
-                    <h2>Let's Connect</h2>
-                    <p class="section-subtitle">
-                        Open to learning opportunities, research
-                        collaborations and software engineering internships.
-                    </p>
-                </div>
-
-                <div class="contact-card">
-                    <p><strong>Email:</strong>
-                        <a href="mailto:sambardhanabishoyi@gmail.com">
-                            sambardhanabishoyi@gmail.com
-                        </a>
-                    </p>
-
-                    <p><strong>Phone:</strong> 7205788292</p>
-
-                    <p><strong></strong>
-                        <a href="https://github.com/Sambardhana" target="_blank">
-                            My GitHub profile
-                        </a>
-                    </p>
-
-                    <p><strong></strong>
-                        <a href="https://www.linkedin.com/in/sambardhana-bishoyi-88167b336/"
-                           target="_blank">
-                            My Linkdin profile
-                        </a>
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <!-- <footer>
-        <div class="container">
-            <p> Sambardhana Bishoyi</p>
-             <p>Designed with curiosity and a passion for technology.</p>
-        </div>
-    </footer> -->
-
-    <script src="script.js"></script>
+  </div>
+  <div class="glyphs" aria-hidden="true">
+    <svg viewBox="0 0 100 100"><g fill="#fff"><rect x="42" y="0" width="16" height="100" rx="8" transform="rotate(45 50 50)"/><rect x="42" y="0" width="16" height="100" rx="8" transform="rotate(-45 50 50)"/></g></svg>
+    <svg viewBox="0 0 100 100"><g fill="#b6ff3a"><circle cx="30" cy="30" r="22"/><circle cx="70" cy="30" r="22"/><circle cx="30" cy="70" r="22"/><circle cx="70" cy="70" r="22"/></g></svg>
+    <svg viewBox="0 0 100 100"><path d="M10 90V50a40 40 0 0 1 80 0v40H66V50a16 16 0 0 0-32 0v40Z" fill="#fff"/></svg>
+    <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="#7b3dff"/></svg>
+    <svg viewBox="0 0 100 100"><polygon points="4,10 50,50 4,90" fill="#fff"/><polygon points="96,10 50,50 96,90" fill="#fff"/></svg>
+    <svg viewBox="0 0 100 100"><path d="M50 4a46 46 0 0 1 0 92Z" fill="#ff8a1f"/><path d="M50 4a46 46 0 0 0 0 92Z" fill="#fff" opacity=".0"/></svg>
+    <svg viewBox="0 0 100 100"><polygon points="50,6 94,50 50,50" fill="#fff"/><polygon points="50,50 94,94 6,94" fill="#fff"/></svg>
+    <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="34" fill="none" stroke="#ff2bd6" stroke-width="24"/></svg>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
